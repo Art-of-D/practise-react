@@ -1,0 +1,35 @@
+.aboutImg,
+.aboutInfo {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  .aboutCenter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+  .aboutImg,
+  .aboutInfo {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .aboutImg::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0.5rem solid var(--clr-primary-5);
+    box-sizing: border-box;
+    top: -1.5rem;
+    left: -1.5rem;
+  }
+
+  .aboutImg {
+    position: relative;
+  }
+  .aboutPhoto {
+    position: relative;
+  }
+}
